@@ -26,8 +26,8 @@ letter2 = letter.map(toUpper);
 var get = document.querySelector("#generate");
 
 get.addEventListener("click", function() {
-    ps = generatePassword();
-    document.getElementById("password").placeholder = ps;
+    pwd = generatePassword();
+    document.getElementById("password").placeholder = pwd;
 });
 
 // Start function to generate password
@@ -113,14 +113,14 @@ function generatePassword() {
     }
     // This joins the password array and converts it to a string
     // Worked with a tutor to incorporate this option
-    var ps = password.join("");
-    UserInput(ps);
-    return ps;
+    var pwd = password.join("");
+    UserInput(pwd);
+    return pwd;
 }
 // This puts the password value into the textbox
 // Changed function input to use textcontent
-function UserInput(ps) {
-    document.getElementById("password").textContent = ps;
+function UserInput(pwd) {
+    document.getElementById("password").textContent = pwd;
 
 }
 
